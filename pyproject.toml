@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-mt5-gateway"
+version = "0.1.0"
+description = "Open-source, zero-DLL cross-platform MetaTrader 5 bridge for macOS, Linux, and Windows."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["metatrader5", "mt5", "macos", "algorithmic-trading", "forex", "mql5"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dataframe = ["pandas>=2.0"]
+dev = ["pytest>=8.0", "build>=1.0", "twine>=5.0"]
+
+[project.scripts]
+open-mt5-preflight = "open_mt5_gateway.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
