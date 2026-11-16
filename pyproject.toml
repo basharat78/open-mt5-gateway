@@ -7,14 +7,14 @@ name = "open-mt5-gateway"
 version = "0.1.0"
 description = "Open-source, zero-DLL cross-platform MetaTrader 5 bridge for macOS, Linux, and Windows."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.10"
 keywords = ["metatrader5", "mt5", "macos", "algorithmic-trading", "forex", "mql5"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Financial and Insurance Industry",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: MacOS",
     "Operating System :: POSIX :: Linux",
     "Operating System :: Microsoft :: Windows",
