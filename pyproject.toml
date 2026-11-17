@@ -35,6 +35,7 @@ open-mt5-preflight = "open_mt5_gateway.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/basharat78/open-mt5-gateway"
+PyPI = "https://pypi.org/project/open-mt5-gateway/"
 Repository = "https://github.com/basharat78/open-mt5-gateway"
 Issues = "https://github.com/basharat78/open-mt5-gateway/issues"
 
